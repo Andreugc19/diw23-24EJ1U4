@@ -1,9 +1,15 @@
+body.ynwa {
+    background-color: #0D5C63;
+    background-image: none;
+}
+
 body {
     font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     position: relative;
-    background-color: #0d5c63;
+    background-color: rgba(13, 92, 99);
+    background-size: cover;
 }
 
 header {
@@ -39,7 +45,7 @@ header img {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    width: 800px;
+    width: 40%;
     margin-right: 10px;
 }
 
@@ -208,15 +214,6 @@ img[src="./images/hero.jpg"] {
     text-decoration: underline;
 }
 
-footer {
-    background-color: #44A1A0;
-    color: #000000;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: flex-end;
-}
-
 .follow-us {
     display: inline;
     margin-right: 10px;
@@ -224,6 +221,66 @@ footer {
 
 .bg-primary {
     background-color: #44A1A0 !important;
+}
+
+.custom-font {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+}
+
+.avatar-option {
+    opacity: 0.6;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.avatar-option:hover {
+    opacity: 1;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#avatar-selection {
+    display: block;
+}
+
+.avatar-radio {
+    display: none;
+}
+
+
+.avatar-label {
+    cursor: pointer;
+    opacity: 0.6;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+
+.avatar-radio:checked + .avatar-label {
+    opacity: 1;
+}
+
+
+.avatar-label:hover {
+    opacity: 1;
+}
+
+.color-container {
+    background-color: rgba(13, 92, 99, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+footer {
+    background-color: #44A1A0;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+    margin-top: 190px;
 }
 
 footer p {
@@ -245,16 +302,32 @@ footer img {
 }
 
 @media screen and (max-width: 767px) {
-    .desktop-logo {
+    .desktop-logo,
+    .mobile-logo {
         display: none;
     }
+
+    .desktop-logo {
+        max-width: 150px;
+        margin-right: auto;
+    }
+
     .mobile-logo {
         max-width: 80px;
         margin-right: 10px;
         display: inline;
+        float: none;
+        margin-left: 0;
     }
     
-    header {
+    .signup_page header {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+    
+    .ynwa-page header {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -263,18 +336,24 @@ footer img {
 
     header img {
         max-width: 80px;
-        margin-right: 0;
+        margin-right: 10px;
     }
 
     #search-input {
         width: 60%;
-    }
+    }   
 
-    form {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    #avatar-selection {
+        text-align: center;
+    }
+    
+    .avatar-radio {
+        display: none;
+        margin: 0 auto;
     }
 
     .action-bar {
