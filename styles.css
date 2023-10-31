@@ -45,7 +45,7 @@ header img {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    width: 800px;
+    width: 40%;
     margin-right: 10px;
 }
 
@@ -340,7 +340,7 @@ footer img {
     }
 
     #search-input {
-        width: 60%;
+        width: 40%;
     }   
 
     .form-group {
