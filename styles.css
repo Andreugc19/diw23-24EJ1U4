@@ -45,7 +45,7 @@ header img {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    width: 40%;
+    width: 800px;
     margin-right: 10px;
 }
 
@@ -214,6 +214,17 @@ img[src="./images/hero.jpg"] {
     text-decoration: underline;
 }
 
+footer {
+    background-color: #44A1A0;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+    margin-top: 190px;
+}
+
 .follow-us {
     display: inline;
     margin-right: 10px;
@@ -270,17 +281,6 @@ img[src="./images/hero.jpg"] {
     padding: 20px;
     border-radius: 10px;
     color: white;
-}
-
-footer {
-    background-color: #44A1A0;
-    color: #000000;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: auto;
-    margin-top: 190px;
 }
 
 footer p {
